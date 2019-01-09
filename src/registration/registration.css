@@ -1,0 +1,28 @@
+.registration-div-with-text {
+  margin: 25px;
+}
+
+.registration-label {
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.registration-input {
+  display: block;
+  width: 40%;
+  height: 7%;
+  margin: 20px auto;
+  padding-left: 5px;
+  font: 1.2rem Bodoni;
+  font-weight: bold;
+  background: rgb(247, 229, 181);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.registration-input:focus {
+  border-color: rgb(0, 0, 0);
+  outline: none;
+}

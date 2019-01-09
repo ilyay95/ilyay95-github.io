@@ -1,0 +1,70 @@
+.spell-window {
+    border: 7px solid rgb(30, 30, 30);
+    border-radius: 60px;
+}
+
+.spell-window>.close {
+    right: 37px;
+    top: 27px;
+    width: 40px;
+    height: 40px;
+}
+
+.spell-window>.close::before,
+.spell-window>.close::after {
+    left: 19px;
+    height: 35px;
+}
+
+.spell-window>h3 {
+    margin: 65px auto;
+    text-align: center;
+    color: rgb(30, 30, 30);
+}
+
+.spell-button {
+    width: 110px;
+    height: 110px;
+    margin: 0 23px;
+    background: #C94A4A; /* Для браузеров, которые не поддерживают градиенты */
+    background: -webkit-linear-gradient(left, #900508 30%, #900508 70%, #900508); /* Для Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left, #900508 30%, #900508 70%, #900508); /* Для Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left, #900508 30%, #900508 70%, #900508); /* Для Firefox 3.6 - 15 */
+    background: linear-gradient(left, #900508 30%, #900508 70%, #4D9078); /* Стандартный синтаксис */
+    font: bold 1.1rem sans-serif;
+    color: rgb(30, 30, 30);
+    border: 5px solid rgb(30, 30, 30);
+    border-radius: 50%;
+    outline: none;
+}
+
+.spell-button:hover {
+    transform: scale(1.2);
+    box-shadow: 15px 15px 20px rgb(23, 23, 23);
+}
+
+.spell-button:focus {
+    border: 5px solid rgb(141, 5, 5);
+}
+
+.task-type-button {
+    width: 130px;
+    height: 55px;
+    margin: 0 16px;
+    padding: 5px;
+    background: rgb(9, 182, 173);
+    font: bold 1.1rem sans-serif;
+    color: rgb(30, 30, 30);
+    border: 5px solid rgb(30, 30, 30);
+    border-radius: 20px;
+    outline: none;  
+}
+
+.task-type-button:hover {
+    transform: scale(1.2);
+    box-shadow: 15px 15px 20px rgb(23, 23, 23);
+}
+
+.task-type-button:focus {
+    border: 5px solid rgb(141, 5, 5);
+}

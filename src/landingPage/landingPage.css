@@ -1,0 +1,177 @@
+@font-face {
+    font-family: RubensModern;
+
+}
+
+@font-face {
+    font-family: Bodoni;
+
+}
+
+body {
+    margin: 0;
+    line-height: 0;
+}
+
+.head-section {
+    background-image: url(../../images/background.jpg);
+    background-size: cover;
+    padding: 1%;
+}
+
+div {
+    display: block;
+    font: 3.5rem RubensModern;
+    color: rgb(0, 0, 0); 
+    text-shadow: 5px 5px 10px rgb(206, 125, 5);
+    cursor: default;  
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    display: block;
+    float: right;
+    padding: 10px;    
+}
+
+nav a {
+    text-decoration: none;
+    font: 1.5rem RubensModern;
+    color: rgba(0, 0, 0, 0.6);
+}
+  
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.game-description {
+    width: 70%;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 45px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0);
+}
+
+p {
+    font: 1.3rem RubensModern;
+    text-indent: 3%;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none; 
+}
+
+.play-button {
+    display: block;
+    width: 200px;
+    margin: 2% auto;
+    padding: 1%;
+    background-color: rgba(206, 125, 5, 0.6);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 45px;
+    font: 1.5rem RubensModern;
+    color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+    outline: none;
+}
+
+.play-button:hover {
+    font-weight: bold;
+    background-color: rgb(206, 125, 5);
+    border-color: rgb(0, 0, 0);
+}
+
+.screenshots-section {
+    padding: 10px;
+    background-color: rgb(223, 178, 31);
+    border-top: 6px rgb(255, 255, 255) dashed;
+    border-bottom: 6px rgb(255, 255, 255) dashed;
+    line-height: 0;
+}
+
+.screenshots-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.screenshots-section li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    margin: 20px auto;
+    border: 3px rgb(255, 255, 255) double;
+}
+
+.screenshots-section div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    font: 3rem Bodoni; 
+    font-weight: bold;
+    text-shadow: none;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    display: block;
+    z-index: 2;
+    width: 450px;
+    height: 250px;
+    translate: 0.5s;
+}
+
+img:hover + div {
+    z-index: 3;
+}
+
+.screenshots-section div:hover {
+    z-index: 4;
+}
+
+.contacts-section {
+    background: url('../../images/bottom.jpg');
+    background-size: cover;
+    line-height: 1rem;
+    padding: 30px;
+    text-align: center;
+}
+
+h2, h3 {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    font-family: Bodoni; 
+    color: rgb(0, 0, 0); 
+}
+
+.contacts-section p {
+    font: 1.1rem Bodoni; 
+    font-weight: bold;
+    text-indent: 0;
+    color: rgb(0, 0, 0); 
+    line-height: 0;
+}
+
+:focus { 
+    outline: 1px dashed green; 
+}

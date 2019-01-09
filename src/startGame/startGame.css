@@ -1,0 +1,76 @@
+.game-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: 100vh;
+}
+
+.health-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.health-bar-container {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.character-name {
+    font: bold 2rem sans-serif;
+    color: rgb(30, 30, 30);
+}
+
+.health-bar {
+    width: 40%;
+    height: 30px;
+    margin: 0 auto;
+    border: 7px solid rgb(30, 30, 30);
+    border-radius: 15px;
+}
+
+.percent-health-bar {
+    height: 100%;
+    border-radius: 5px;
+    background: #060303; /* Для браузеров, которые не поддерживают градиенты */
+    background: -webkit-linear-gradient(left, #900508 30%, #900508 70%, #900508); /* Для Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left, #900508 30%, #900508 70%, #900508); /* Для Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left, #900508 30%, #900508 70%, #900508); /* Для Firefox 3.6 - 15 */
+    background: linear-gradient(left, #900508 30%, #900508 70%, #900508); /* Стандартный синтаксис */
+    font: bold 1.4rem sans-serif;
+    color: rgb(30, 30, 30);
+}
+
+.attack-button {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    width: 350px;
+    height: 100px;
+    margin-left: -175px;
+    background-color: rgb(6, 3, 3);
+    background: -webkit-radial-gradient(rgb(6, 3, 3), rgb(6, 3, 3)); /* Для Opera 11.1 - 12.0 */
+    background: -o-radial-gradient(rgb(199, 102, 102), rgb(145, 54, 54)); /* Для Opera 11.1 - 12.0 */
+    background: -moz-radial-gradient(rgb(199, 102, 102), rgb(145, 54, 54)); /* Для Firefox 3.6 - 15 */
+    background: radial-gradient(rgb(199, 102, 102), rgb(145, 54, 54)); /* Стандартный синтаксис */
+    font: bold 2rem sans-serif;
+    color: rgb(30, 30, 30);
+    border: 7px solid rgb(30, 30, 30);
+    border-radius: 60px;
+    text-align: center;
+    line-height: 6rem;
+    text-shadow: 5px 5px 10px rgb(23, 23, 23);
+}
+
+.attack-button:hover {
+    font-size: 2.5rem;
+    box-shadow: 15px 15px 30px rgb(23, 23, 23);
+}
